@@ -1,0 +1,13 @@
+import { css } from 'styled-components'
+export default css`
+  padding: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+  height: 20px;
+
+  border:
+  ${ props => props.theme.name === 'terminal' ? '1px solid ' + props.theme.color : 'none' };
+
+`

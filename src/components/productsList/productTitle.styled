@@ -1,0 +1,18 @@
+import { css } from 'styled-components'
+export default css`
+  
+  display: block;
+  font-size: 1.3em;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  margin-top: 10px;
+  
+  width:
+  ${ props => props.theme.thumb.width };
+
+  &:visited {
+    color:
+    ${ props => props.theme.color }
+  }
+`

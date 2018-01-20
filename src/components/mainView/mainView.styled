@@ -1,0 +1,16 @@
+import { css } from 'styled-components'
+export default css`
+
+  width: 100%;
+  min-height: 100vh;
+  
+  color:
+  ${ props => props.theme.color };
+
+  background-color:
+  ${ props => props.theme.backgroundColor };  
+  
+  font-family:
+   ${ props => props.theme.fontFamily };
+  
+`

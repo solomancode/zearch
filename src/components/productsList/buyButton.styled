@@ -1,0 +1,15 @@
+import { css } from 'styled-components'
+export default css`  
+
+  border: none;
+  font-size: 0.8em;
+  font-weight: bold;
+  cursor: pointer;
+
+  background-color:
+  ${ props => props.theme.buttonBgColor };
+
+  color:
+  ${ props => props.theme.buttonColor };
+
+`

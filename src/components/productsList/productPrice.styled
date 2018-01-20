@@ -1,0 +1,16 @@
+import { css } from 'styled-components'
+export default css`  
+  
+  font-size: 1.2em;
+
+  color: 
+  ${ props => props.theme.priceColor };
+
+  &:after {
+    font-size: .9em;
+    margin-left: .25em;
+
+    content:
+    ${ props => props.theme.currencySymbol };
+  }
+`

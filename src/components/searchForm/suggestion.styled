@@ -1,0 +1,29 @@
+import { css } from 'styled-components'
+export default css`  
+  font-size: 1.2em;
+  padding: 8px 10px;
+  border: 1px solid ${ props => props.theme.color };
+  width: 100%;
+  text-align: left;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  cursor: pointer;
+  box-sizing: border-box;
+  margin: -1px;
+  
+  color: 
+  ${ props => props.theme.color };
+
+  background-color: 
+  ${ props => props.theme.backgroundColor };
+
+  &:hover {    
+    color: 
+    ${ props => props.theme.backgroundColor };
+
+    background-color: 
+    ${ props => props.theme.color };  
+  }
+
+`

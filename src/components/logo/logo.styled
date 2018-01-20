@@ -1,0 +1,11 @@
+import { css } from 'styled-components'
+export default css`
+  
+  margin: 10px;
+  font-size: 1em;
+  font-weight: normal;
+
+  color:
+  ${ props => props.theme.color };
+
+`

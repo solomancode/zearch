@@ -1,0 +1,20 @@
+import { css } from 'styled-components'
+
+const COLORS =
+  [
+      'Orange'
+    , 'Gold'
+    , 'Crimson'
+    , 'LimeGreen'
+    , 'Cyan'
+    , 'Magenta'
+    , 'Purple'
+  ]
+
+export default css`
+
+  font-size: .6em;
+
+  color:
+  ${ COLORS[ Math.round( Math.random() * COLORS.length ) ] };
+`

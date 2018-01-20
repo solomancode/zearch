@@ -1,0 +1,30 @@
+import { css } from 'styled-components'
+export default css`
+
+  outline: none;
+  font-size: 1.5em;
+  padding: 15px 0;
+  background-color: transparent;
+  width: 100%;
+  
+  font-weight:
+  ${ props => props.theme.name !== 'terminal' ? 'normal' : 'bold' };
+
+  color:
+  ${ props => props.theme.color }; 
+  
+  border:
+  ${ props => props.theme.name !== 'terminal' ? '1px solid #ccc' : '1px solid ' + props.theme.color };
+
+  border-width: 0 0 2px 0;
+
+  -webkit-transition: all 80ms ease-out;
+  -moz-transition: all 80ms ease-out;
+  transition: all 80ms ease-out;
+
+  &:focus {
+    font-weight: normal;
+    font-size: 2.3em;
+  }
+
+`
